@@ -6,6 +6,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(25rem, 30rem));
         grid-gap: 12.8rem;
+        justify-content: center; /* O item será centralizado para ficar melhor a visuaalização do componente deste desafio */
     }
 
     &__box {
@@ -14,7 +15,7 @@
         border-radius: 8px;
         width: 100%;
         max-width: 30.4rem;
-        transition: all .3s;
+        transition: all 0.3s;
 
         &:hover {
             box-shadow: 0 8px 24px rgba($black-color, 0.08);
@@ -39,7 +40,7 @@
         height: 4.8rem;
         border-radius: 50%;
         background-color: $gray-color-2;
-        transition: all .3s;
+        transition: all 0.3s;
         cursor: pointer;
 
         &:hover {
@@ -52,7 +53,7 @@
     }
 
     &__checkbox:checked ~ &__box-favorite &__icon-path-1 {
-        stroke:$white-color;
+        stroke: $white-color;
         fill: $white-color;
     }
 
@@ -64,25 +65,21 @@
         background-color: $red-color-2;
     }
 
-    &__favorite-button {
-
-    }
-
     &__box-favorite:hover &__icon-path-1 {
         stroke: $red-color-1;
         fill: $pink-color-1;
     }
 
     &__icon {
-        width: 2.6rem;
-        height: 2.3rem;
+        width: 26px;
+        height: 23px;
         @include absCenter;
     }
 
     &__icon-path-1 {
         stroke: $black-color-1;
         fill: $gray-color-2;
-        transition: all .3s;
+        transition: all 0.3s;
     }
 
     &__prices {
