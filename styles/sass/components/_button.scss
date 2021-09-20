@@ -1,0 +1,41 @@
+.button {
+    width: 100%;
+    text-align: center;
+    padding: 1.2rem 2.4rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: -0.005em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &--green {
+        background-color: $green-color-1;
+        &:hover {
+            background-color: $green-color-2;
+        }
+    }
+
+    &--green-2 {
+        background-color: $green-color-3;
+    }
+
+    &__check {
+        width: 1.8rem;
+        height: 1.3rem;
+        margin-right: 1.6rem;
+        transition: all 0.3s;
+    }
+
+    &__added {
+        &--white {
+            color: $white-color;
+        }
+
+        &--black-1 {
+            color: $black-color-1;
+        }
+    }
+}
